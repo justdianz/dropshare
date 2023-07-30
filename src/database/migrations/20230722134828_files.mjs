@@ -5,6 +5,7 @@
 export const up = async (knex) => {
   await knex.schema.createTableIfNotExists("files", (table) => {
     table.bigIncrements();
+    table.string("browser_id").notNullable();
     table.string("slug").notNullable();
     table.string("name").notNullable();
     table.string("mime").notNullable();

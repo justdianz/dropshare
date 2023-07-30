@@ -12,4 +12,6 @@ async function store(req, res) {
   return res.send("ok");
 }
 
-export { index, store };
+async function destroy(req, res) {}
+
+export { index, store, destroy };

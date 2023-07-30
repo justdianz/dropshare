@@ -1,5 +1,5 @@
 async function index(req, res) {
-  return res.send("ok");
+  return res.render("home");
 }
 
 export { index };
